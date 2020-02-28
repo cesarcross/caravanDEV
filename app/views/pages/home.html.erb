@@ -1,0 +1,10 @@
+<%# <h1>Pages#home</h1> %>
+<%# <p>Find me in app/views/pages/home.html.erb</p> %>
+<%= simple_form_for @page, html: { class: "form-home"} do |f| %>
+  <%= f.input :name, label: "Nome", placeholder: "Nome" %>
+  <%= f.input :email, label: "Email", placeholder: "Email" %>
+  <%= f.input :phone, required: false, label: "Telefone", placeholder: "(XX) XXXXX-XXXX " %>
+  <%= f.input :message, label: "Mensagem", placeholder: "Mensagem" %>
+  <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+  <%= f.button :submit, 'Enviar', :class=> "btn btn-primary" %>
+<% end %>

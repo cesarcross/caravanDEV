@@ -1,0 +1,9 @@
+<%# <h1>Contact#create</h1> %>
+<%# <p>Find me in app/views/contact/create.html.erb</p> %>
+<%= simple_form_for @contact do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :message %>
+  <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+  <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+<% end %>
