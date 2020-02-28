@@ -77,9 +77,10 @@ test:
 
 production:
   <<: *default
-  database: Caravan_production
+  database: codecaravan
   host: pgsql.codecaravan.com.br
   username: <%= ENV['APPNAME_DATABASE_USER'] %>
+  # username: codecaravan
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
 
   # production:
