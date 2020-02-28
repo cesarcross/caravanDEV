@@ -20,8 +20,6 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: cesar
-  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
@@ -76,15 +74,13 @@ test:
 #   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
 #
 # You can use this database configuration with:
-#
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
+
 production:
   <<: *default
   database: Caravan_production
-  # username: Caravan
-  # password: <%= ENV['CARAVAN_DATABASE_PASSWORD'] %>
+  host: pgsql.codecaravan.com.br
+  username: <%= ENV['APPNAME_DATABASE_USER'] %>
+  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
 
   # production:
   # <<: *default
