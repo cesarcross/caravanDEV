@@ -1,0 +1,21 @@
+.last-infos {
+  background-color: $black;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+  .last-infos__wrapper{
+    display: flex;
+    height: 250px;
+    width: $width;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card5 {
+    @include card5_template;
+    .cities {
+      margin-top: 10px;
+    }
+  }
+}
