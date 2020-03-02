@@ -12,7 +12,7 @@ class Page < MailForm::Base
       # subject: "My Contact Form",
       subject: "Formulário de teste",
       # to: 'your.email@yourdomain.com',
-      to: 'wagontestpilot@gmail.com',
+      to: 'contato@codecaravan.com.br',
       from: %("#{name}" <#{email}>)
       # the from will display the name entered by the user followed by the email
     }

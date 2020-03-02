@@ -1,10 +1,8 @@
-# frozen_string_literal: true
-
 Rails.application.configure do
-  # config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
   # Settings specified here will take precedence over those in config/application.rb.
 
-  # Code is not reloaded between requests.
+    # Code is not reloaded between requests.
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
@@ -30,8 +28,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
-  # config.assets.compile = true
+  # config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -58,7 +56,7 @@ Rails.application.configure do
   config.log_level = :debug
 
   # Prepend all log lines with the following tags.
-  config.log_tags = [:request_id]
+  config.log_tags = [ :request_id ]
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
@@ -72,33 +70,6 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-  # config.action_mailer.default_url_options = { host: 'http://codecaravan.com.br' }
-  # config.action_mailer.delivery_method = :smtp
-
-  # MailForm::Base.smtp_settings = {
-  #   user_name: ENV['GMAIL_USERNAME'],
-  #   password: ENV['GMAIL_PASSWORD'],
-  #   domain: 'gmail.com',
-  #   address: 'smtp.gmail.com',
-  #   port: 587,
-  #   authentication: :plain,
-  #   enable_starttls_auto: true
-  # }
-
-  config.action_mailer.default_url_options = { host: 'http://codecaravan.com.br' }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default charset: 'utf-8'
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.codecaravan.com.br',
-    port: 465,
-    domain: 'codecaravan.com.br',
-    user_name: 'contato@codecaravan.com.br',
-    password: 'caravan987',
-    authentication: 'plain',
-    enable_starttls_auto: true
-  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -114,7 +85,7 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  if ENV['RAILS_LOG_TO_STDOUT'].present?
+  if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
