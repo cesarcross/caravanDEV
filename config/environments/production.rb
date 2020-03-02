@@ -95,7 +95,7 @@ Rails.application.configure do
     port: 465,
     domain: 'codecaravan.com.br',
     user_name: 'contato@codecaravan.com.br',
-    password: 'caravan987',
+    password: '',
     authentication: 'plain',
     enable_starttls_auto: true
   }
