@@ -97,14 +97,14 @@
     <p>Entre em contato <i class="fas fa-arrow-right"></i></p>
   </div>
     <div class="form-section__group">
-    <%= simple_form_for @page, html: { class: "form-home"} do |f| %>
-      <%= f.input :name, label: false, placeholder: "Nome" %>
-      <%= f.input :email, label: false, placeholder: "Email" %>
-      <%= f.input :phone, label: false, placeholder: "Telefone (XX) XXXXX-XXXX " %>
-      <%= f.text_area :message, label: false, placeholder: "Mensagem", :id => "page_message" %>
-      <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
-      <%= f.button :submit, 'Enviar', :id=> "submit" %>
-    <% end %>
+      <%= simple_form_for @page, html: { class: "form-home"} do |f| %>
+        <%= f.input :name, label: "Nome", placeholder: "Nome" %>
+        <%= f.input :email, label: "Email", placeholder: "Email" %>
+        <%= f.input :phone, required: false, label: "Telefone", placeholder: "(XX) XXXXX-XXXX " %>
+        <%= f.input :message, label: "Mensagem", placeholder: "Mensagem" %>
+        <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+        <%= f.button :submit, 'Enviar', :class=> "btn btn-primary" %>
+      <% end %>
   </div>
 </div>
 </div>
