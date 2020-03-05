@@ -1,8 +1,8 @@
-footer {
+.footer_desktop {
   background-color: $black;
   width: 100%;
   color: $yellow;
-  
+
   .social_media {
     height: 121px;
     display: flex;
@@ -28,8 +28,24 @@ footer {
           color: $yellow;
           font-size: 14px;
         }
-  
+
       }
     }
   }
+}
+
+.footer_mobile {
+  background-color: $black;
+  // width: $width_mobile;
+  padding-bottom: 12px;
+  p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 0px;
+    color: $yellow;
+  }
+
 }

@@ -3,7 +3,9 @@
   // width: 100vw;
   #cc_icon {
     // position: absolute;
-    background-image: url('/img/cc_icon.png');
+    // background-image: url("/img/cc_icon.png");
+    // background-image: url("../../images/cc_icon.png");
+    background-image: asset-url("cc_icon.png");
     background-repeat: no-repeat;
     background-position: right;
     height: 282px;

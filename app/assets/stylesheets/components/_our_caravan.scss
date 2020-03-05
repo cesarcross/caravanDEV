@@ -1,6 +1,6 @@
 .our_caravan__container {
   background-color: $red;
-  
+
 }
 .our_caravan {
   height: 708px;
@@ -31,9 +31,6 @@
     grid-row: 6 / 8;
 
     @include caravan_cards;
-    img {
-      transform: scaleX(-1);
-    }
   }
 
   .card_joao {
@@ -41,10 +38,35 @@
     grid-row: 4 / 7;
 
     @include caravan_cards;
-    img {
-      transform: scaleX(-1);
-    }
     // place-self: end;
+  }
+
+}
+
+.our_caravan__container_mobile {
+  background-color: $red;
+
+}
+.our_caravan_mobile {
+  box-sizing: border-box;
+  width: $width_mobile;
+  margin: 0 auto;
+  padding: 20px;
+
+  .card_main {
+    @include caravan_card_main_mobile;
+  }
+
+  .card_cesar {
+    @include caravan_cards_mobile;
+  }
+
+  .card_debora {
+    @include caravan_cards_mobile;
+  }
+
+  .card_joao {
+    @include caravan_cards_mobile;
   }
 
 }

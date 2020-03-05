@@ -1,0 +1,95 @@
+.areas {
+  background-color: $black;
+  height: 272px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  img {
+    height: 54px;
+  }
+
+  .areas__icon {
+    width: 208px;
+    height: 283px;
+    position: absolute;
+    left: calc(100% - 208px);
+    top: 124px;
+    background-image: asset-url("codecaravan-icon-04.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .areas__cards {
+    width: 250px;
+    padding-left: 35px;
+
+    h3 {
+      margin: 12px 0 10px 0;
+      font-family: "Muli", sans-serif;
+      font-size: 30px;
+      line-height: 26px;
+      letter-spacing: 0;
+      font-weight: medium;
+      color: $green;
+    }
+
+    ul {
+      li {
+        color: $green;
+        list-style-type: none;
+        font-family: "Muli", sans-serif;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+.areas_mobile {
+  background-color: $black;
+
+  .flex-cards {
+    height: 730px;
+    width: $width;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  img {
+    height: 54px;
+  }
+
+  .areas__cards {
+    width: 260px;
+    flex-basis: auto;
+
+    h3 {
+      margin: 12px 0 10px 0;
+      font-family: "Muli", sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0;
+      font-weight: medium;
+      color: $green;
+    }
+
+    ul {
+      li {
+        color: $green;
+        list-style-type: none;
+        font-family: "Muli", sans-serif;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0;
+        font-weight: lighter;
+      }
+    }
+  }
+}
