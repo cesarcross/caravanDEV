@@ -1,7 +1,7 @@
 .last-infos {
   background-color: $black;
   margin: auto;
-  .last-infos__wrapper{
+  .last-infos__wrapper {
     display: flex;
     height: 250px;
     width: $width;
@@ -23,16 +23,15 @@
   background-color: $black;
   margin: auto;
   padding-top: 52px;
-  .last-infos__wrapper{
+  .last-infos__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     // height: 250px;
     width: $width_mobile;
-    height: 615px;
+    height: 800px; //!alterado
     margin: auto;
     // justify-content: space-between;
-
   }
 
   .card5 {
@@ -44,5 +43,11 @@
 
   .social_media {
     @include social_media_mobile;
+    position: relative;
+    right: 2%;
+    top: -13px;
+    ul {
+      list-style: none;
+    }
   }
 }

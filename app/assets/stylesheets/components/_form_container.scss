@@ -7,7 +7,6 @@
   width: 100%;
   background-color: $red;
   position: absolute;
-
 }
 
 .form-section__container {
@@ -25,13 +24,13 @@
     color: $yellow;
     font-size: 18px;
     letter-spacing: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: "Muli", sans-serif;
     font-weight: lighter;
   }
   .form-section__group {
-    grid-template-columns: 2  / 4;
+    grid-template-columns: 2 / 4;
     input {
-      font-family: 'IBM Plex Mono', monospace;
+      font-family: "IBM Plex Mono", monospace;
       font-size: 12px;
       font-weight: lighter;
       letter-spacing: 0;
@@ -49,7 +48,7 @@
       position: relative;
     }
     #message {
-      font-family: 'IBM Plex Mono', monospace;
+      font-family: "IBM Plex Mono", monospace;
       font-size: 12px;
       font-weight: lighter;
       letter-spacing: 0;
@@ -78,13 +77,13 @@
     color: $yellow;
     font-size: 18px;
     letter-spacing: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: "Muli", sans-serif;
     font-weight: lighter;
     margin-bottom: 38px;
   }
   .form-section__group {
     input {
-      font-family: 'IBM Plex Mono', monospace;
+      font-family: "IBM Plex Mono", monospace;
       font-size: 12px;
       font-weight: lighter;
       letter-spacing: 0;
@@ -103,7 +102,7 @@
       left: 50%;
     }
     #message {
-      font-family: 'IBM Plex Mono', monospace;
+      font-family: "IBM Plex Mono", monospace;
       font-size: 12px;
       font-weight: lighter;
       letter-spacing: 0;

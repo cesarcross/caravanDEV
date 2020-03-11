@@ -180,7 +180,7 @@ $width_mobile: 330px;
     text-align: center;
     margin-top: 5px;
   }
-  .border {
+  .border__card {
     border: 2px solid $black;
     padding: 10px;
     box-shadow: 5px 5px $red, 7px 3px $black, 3px 7px $black, 8px 8px $black;
@@ -215,8 +215,6 @@ $width_mobile: 330px;
 }
 
 @mixin social_media_mobile {
-  // position: absolute;
-  // left: 1%;
   width: 18px;
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +225,6 @@ $width_mobile: 330px;
   ul {
     text-align: center;
     li {
-      display: inline-block;
       margin: 5px 10px;
       a {
         text-decoration: none;

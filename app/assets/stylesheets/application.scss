@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+input::placeholder {
+  color: $light_green;
+}
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $light_green;
+}
+
+textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $light_green;
+}
