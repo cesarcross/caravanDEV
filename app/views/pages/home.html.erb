@@ -21,134 +21,133 @@
       </div>
       <div class="banner__image"></div>
     </div>
-  </div>
-  <div class="areas" id="services">
-    <div class="wrapper flex-cards">
-      <div class="areas__cards">
-        <%= image_tag("tech-icon-color.svg") %>
-        <h3>Tecnologia</h3>
-        <ul>
-          <li>Sistemas para web</li>
-          <li>Sistemas mobile e desktop</li>
-        </ul>
-      </div>
-      <div class="areas__cards">
-        <%= image_tag('digital-icon-color.svg') %>
-        <h3>Digital</h3>
-        <ul>
-          <li>Web sites </li>
-          <li>Landing pages</li>
-          <li>E-commerce</li>
-        </ul>
-      </div>
-      <div class="areas__cards">
-        <%= image_tag('design-icon-color.svg') %>
-        <h3>Design</h3>
-        <ul>
-          <li>E-books e editoração</li>
-          <li>Identidade visual</li>
-          <li>Material corporativo</li>
-        </ul>
-      </div>
-      <div class="areas__icon"></div>
-    </div>
-  </div>
-  <div class="banner2">
-    <div id="banner__wrapper">
-      <div class="card2">
-        <h3>Relação de confiança garantida</h3>
-        <p>O trabalho bem feito e cumprimento de prazos são peças-chave do nosso compromisso com&nbspvocê.</p>
+    <div class="areas" id="services">
+      <div class="wrapper flex-cards">
+        <div class="areas__cards">
+          <%= image_tag("tech-icon-color.svg") %>
+          <h3>Tecnologia</h3>
+          <ul>
+            <li>Sistemas para web</li>
+            <li>Sistemas mobile e desktop</li>
+          </ul>
+        </div>
+        <div class="areas__cards">
+          <%= image_tag('digital-icon-color.svg') %>
+          <h3>Digital</h3>
+          <ul>
+            <li>Web sites </li>
+            <li>Landing pages</li>
+            <li>E-commerce</li>
+          </ul>
+        </div>
+        <div class="areas__cards">
+          <%= image_tag('design-icon-color.svg') %>
+          <h3>Design</h3>
+          <ul>
+            <li>E-books e editoração</li>
+            <li>Identidade visual</li>
+            <li>Material corporativo</li>
+          </ul>
+        </div>
+        <div class="areas__icon"></div>
       </div>
     </div>
-  </div>
-  <div class="our_caravan__container" id="caravan">
-    <div class="our_caravan">
-      <div class="card_main">
-        <%= image_tag('caravan-color.svg') %>
-        <h3>Nossa caravana</h3>
-        <p>Conheça quem está por trás da Codecaravan</p>
-      </div>
-      <div class="card_cesar">
-        <%= image_tag('Cesar@2x.png') %>
-        <div class="border-card">
-          <h3>Cesar Corregiari</h3>
-          <p>Back-end developer</p>
-        </div>
-      </div>
-      <div class="card_debora">
-        <%= image_tag("Debora@2x.png") %>
-        <div class="border-card">
-          <h3>Debora Pinheiro</h3>
-          <p>Front-end developer</p>
-        </div>
-      </div>
-      <div class="card_joao">
-        <%= image_tag('Joao@2x.png') %>
-        <div class="border-card">
-          <h3>João<br>
-            Alves</h3>
-          <p>Back-end developer</p>
+    <div class="banner2">
+      <div id="banner__wrapper">
+        <div class="card2">
+          <h3>Relação de confiança garantida</h3>
+          <p>O trabalho bem feito e cumprimento de prazos são peças-chave do nosso compromisso com&nbspvocê.</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="form-section" id="contact">
-    <div class="form-section__line"></div>
-    <div class="form-section__container">
-      <div class="form-section__introduction">
-        <p>Entre em contato <i class="fas fa-arrow-right"></i></p>
-      </div>
-      <div class="form-section__group">
-        <%= simple_form_for @page, html: { class: "form-home"} do |f| %>
-          <%= f.input :name, label: "Nome", placeholder: "Nome" %>
-          <%= f.input :email, label: "Email", placeholder: "Email" %>
-          <%= f.input :phone, required: false, label: "Telefone", placeholder: "(XX) XXXXX-XXXX " %>
-          <%= f.input :message, label: "Mensagem", placeholder: "Mensagem" %>
-          <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
-          <%= f.button :submit, 'Enviar', :class=> "btn btn-primary" %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-  <div class="last-infos">
-    <div class="last-infos__wrapper">
-      <div class="card5">
-        <h3>COMECE AGORA</h3>
-        <p>Estamos prontos para o seu&nbspdesafio!</p>
-        <p><a href="mailto:hello@codecaravan.com.br">hello@codecaravan.com.br</a></p>
-      </div>
-      <div class="card5">
-        <h3>DIGA UM OLÁ</h3>
-        <div class="cities">
-          <p>São Paulo</p>
-          <p>+55 11 98126-3581</p>
-          <p>Av José de Brito de Freitas, 57</p>
-          <p>Casa Verde</p>
+    <div class="our_caravan__container" id="caravan">
+      <div class="our_caravan">
+        <div class="card_main">
+          <%= image_tag('caravan-color.svg') %>
+          <h3>Nossa caravana</h3>
+          <p>Conheça quem está por trás da Codecaravan</p>
         </div>
-        <div class="cities">
-          <p>Curitiba</p>
-          <p>+55 41 98856-0011</p>
-          <p>R. Almirante Tamandaré, 451</p>
-          <p>Alto da XV</p>
+        <div class="card_cesar">
+          <%= image_tag('Cesar@2x.png') %>
+          <div class="border-card">
+            <h3>Cesar Corregiari</h3>
+            <p>Back-end developer</p>
+          </div>
+        </div>
+        <div class="card_debora">
+          <%= image_tag("Debora@2x.png") %>
+          <div class="border-card">
+            <h3>Debora Pinheiro</h3>
+            <p>Front-end developer</p>
+          </div>
+        </div>
+        <div class="card_joao">
+          <%= image_tag('Joao@2x.png') %>
+          <div class="border-card">
+            <h3>João<br>
+              Alves</h3>
+            <p>Back-end developer</p>
+          </div>
         </div>
       </div>
-      <div class="card5">
-        <h3>JUNTE-SE A NOSSA CARAVANA</h3>
-        <p>Estamos sempre em busca de novos&nbsptalentos:</p>
-        <p><a href="mailto:trabalhena@codecaravan.com.br">trabalhena@codecaravan.com.br</a></p>
+    </div>
+    <div class="form-section" id="contact">
+      <div class="form-section__line"></div>
+      <div class="form-section__container">
+        <div class="form-section__introduction">
+          <p>Entre em contato <i class="fas fa-arrow-right"></i></p>
+        </div>
+        <div class="form-section__group">
+          <%= simple_form_for @page, html: { class: "form-homepage"} do |f| %>
+            <%= f.input :name, label: "Nome", placeholder: "Nome" %>
+            <%= f.input :email, label: "Email", placeholder: "Email" %>
+            <%= f.input :phone, required: false, label: "Telefone", placeholder: "(XX) XXXXX-XXXX " %>
+            <%= f.input :message, label: "Mensagem", placeholder: "Mensagem" %>
+            <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+            <%= f.button :submit, 'Enviar', :class=> "btn btn-primary" %>
+          <% end %>
+        </div>
       </div>
     </div>
+    <div class="last-infos">
+      <div class="last-infos__wrapper">
+        <div class="card5">
+          <h3>COMECE AGORA</h3>
+          <p>Estamos prontos para o seu&nbspdesafio!</p>
+          <p><a href="mailto:hello@codecaravan.com.br">hello@codecaravan.com.br</a></p>
+        </div>
+        <div class="card5">
+          <h3>DIGA UM OLÁ</h3>
+          <div class="cities">
+            <p>São Paulo</p>
+            <p>+55 11 98126-3581</p>
+            <p>Av José de Brito de Freitas, 57</p>
+            <p>Casa Verde</p>
+          </div>
+          <div class="cities">
+            <p>Curitiba</p>
+            <p>+55 41 98856-0011</p>
+            <p>R. Almirante Tamandaré, 451</p>
+            <p>Alto da XV</p>
+          </div>
+        </div>
+        <div class="card5">
+          <h3>JUNTE-SE A NOSSA CARAVANA</h3>
+          <p>Estamos sempre em busca de novos&nbsptalentos:</p>
+          <p><a href="mailto:trabalhena@codecaravan.com.br">trabalhena@codecaravan.com.br</a></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="social_media">
+        <div>
+          <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-spotify"></i></a></li>
+          </ul>
+          <p>© 2020 All rights reserved to Codecaravan</p>
+        </div>
+      </div>
+    </footer>
   </div>
-  <footer>
-    <div class="social_media">
-      <div>
-        <ul>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-spotify"></i></a></li>
-        </ul>
-        <p>© 2020 All rights reserved to Codecaravan</p>
-      </div>
-    </div>
-  </footer>
-</div>
