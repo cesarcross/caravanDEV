@@ -86,12 +86,12 @@ Rails.application.configure do
   # }
 
   config.action_mailer.default_url_options = { host: 'http://codecaravan.com.br' }
+  Rails.application.routes.default_url_options[:host] = 'http://codecaravan.com.br'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default charset: 'utf-8'
   config.action_mailer.smtp_settings = {
-    # address: 'smtp.codecaravan.com.br',
     address: 'smtp.kinghost.net',
     port: 465,
     domain: 'codecaravan.com.br',
