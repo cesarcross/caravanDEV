@@ -114,6 +114,11 @@
         box-sizing: border-box;
       }
 
+      input::placeholder {
+        color: $light_green;
+        opacity: 0.5;
+      }
+
       #submit {
         width: 50%;
         position: relative;

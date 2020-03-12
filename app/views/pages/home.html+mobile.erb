@@ -95,13 +95,21 @@
           <p>Entre em contato <i class="fas fa-arrow-down"></i></p>
         </div>
         <div class="form-section__group">
-          <form action="">
+          <%= simple_form_for @page do |f| %>
+            <%= f.input :name, label: false, placeholder: "Nome completo" %>
+            <%= f.input :email, label: false, placeholder: "E-mail" %>
+            <%= f.input :phone, required: false, label: false, placeholder: "Telefone" %>
+            <%= f.input :message, label: false, placeholder: "Sua mensagem" %>
+            <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+            <%= f.button :submit, 'Enviar' %>
+          <% end %>
+          <%# <form action="">
             <input type="text" name="full_name" placeholder="Nome completo">
             <input type="text" name="email" placeholder="E-mail">
             <input type="text" name="fone" placeholder="Telefone">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
             <input id='submit' type="submit" value="Enviar">
-          </form>
+          </form> %>
         </div>
       </div>
     </div>
