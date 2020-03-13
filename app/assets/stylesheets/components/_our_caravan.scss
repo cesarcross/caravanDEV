@@ -21,14 +21,24 @@
 
     .card_cesar {
       grid-column: 2 / 3;
-      grid-row: 4 / 7;
+      grid-row: 2 / 4;
 
       @include caravan_cards;
       // place-self: end;
     }
 
+    .card_vinicius {
+      grid-column: 6 / 7;
+      grid-row: 2 / 4;
+
+      @include caravan_cards;
+      img {
+        transform: scaleX(-1);
+      }
+    }
+
     .card_debora {
-      grid-column: 4 / 5;
+      grid-column: 3 / 4;
       grid-row: 6 / 8;
 
       @include caravan_cards;
@@ -38,8 +48,8 @@
     }
 
     .card_joao {
-      grid-column: 6 / 7;
-      grid-row: 4 / 7;
+      grid-column: 5 / 6;
+      grid-row: 6 / 8;
 
       @include caravan_cards;
       img {
@@ -66,6 +76,10 @@
     }
 
     .card_cesar {
+      @include caravan_cards_mobile;
+    }
+
+    .card_vinicius {
       @include caravan_cards_mobile;
     }
 
