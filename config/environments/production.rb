@@ -30,8 +30,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
-  # config.assets.compile = true
+  # config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -86,16 +86,17 @@ Rails.application.configure do
   # }
 
   config.action_mailer.default_url_options = { host: 'http://codecaravan.com.br' }
+  Rails.application.routes.default_url_options[:host] = 'http://codecaravan.com.br'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default charset: 'utf-8'
   config.action_mailer.smtp_settings = {
-    address: 'smtp.codecaravan.com.br',
+    address: 'smtp.kinghost.net',
     port: 465,
     domain: 'codecaravan.com.br',
     user_name: 'contato@codecaravan.com.br',
-    password: 'caravan987',
+    password: ENV['CONTACT_EMAIL_PASSWORD'],
     authentication: 'plain',
     enable_starttls_auto: true
   }

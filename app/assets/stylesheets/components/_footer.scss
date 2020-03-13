@@ -1,0 +1,57 @@
+.desktop-container {
+  footer {
+    background-color: $black;
+    width: 100%;
+    color: $yellow;
+
+    .social_media {
+      height: 121px;
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: lighter;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: 0px;
+      }
+
+      ul {
+        text-align: center;
+
+        li {
+          display: inline-block;
+          margin: 15px 10px;
+
+          a {
+            text-decoration: none;
+            color: $yellow;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-container {
+  footer {
+    background-color: $black;
+    // width: $width_mobile;
+    padding-bottom: 12px;
+
+    p {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: lighter;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      margin-top: 0px;
+      color: $yellow;
+    }
+  }
+}

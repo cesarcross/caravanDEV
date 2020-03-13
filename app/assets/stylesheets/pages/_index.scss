@@ -1,2 +1,22 @@
 // Import page-specific CSS files here.
 @import "home";
+
+// class wrapper is only on desktop
+// .wrapper {
+//   max-width: $width;
+//   margin: 0 auto;
+// }
+
+// class flex-cards is in both files. However, the $width has a different size for each file
+// ======================
+// .flex-cards {
+// display: flex;
+// justify-content: space-between;
+// width: $width;
+// }
+
+// .flex-cards_mobile {
+//   display: flex;
+//   justify-content: space-between;
+//   width: $width_mobile;
+// }

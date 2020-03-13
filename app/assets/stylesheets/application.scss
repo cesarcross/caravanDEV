@@ -9,5 +9,16 @@
 @import "font-awesome";
 
 // Your CSS partials
+@import "mixins";
 @import "components/index";
 @import "pages/index";
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: min-content;
+}
