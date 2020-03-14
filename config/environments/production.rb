@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
-  # config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -72,34 +71,6 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-  # config.action_mailer.default_url_options = { host: 'http://codecaravan.com.br' }
-  # config.action_mailer.delivery_method = :smtp
-
-  # MailForm::Base.smtp_settings = {
-  #   user_name: ENV['GMAIL_USERNAME'],
-  #   password: ENV['GMAIL_PASSWORD'],
-  #   domain: 'gmail.com',
-  #   address: 'smtp.gmail.com',
-  #   port: 587,
-  #   authentication: :plain,
-  #   enable_starttls_auto: true
-  # }
-
-  config.action_mailer.default_url_options = { host: 'http://codecaravan.com.br' }
-  Rails.application.routes.default_url_options[:host] = 'http://codecaravan.com.br'
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default charset: 'utf-8'
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.kinghost.net',
-    port: 465,
-    domain: 'codecaravan.com.br',
-    user_name: 'contato@codecaravan.com.br',
-    password: ENV['CONTACT_EMAIL_PASSWORD'],
-    authentication: 'plain',
-    enable_starttls_auto: true
-  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -123,4 +94,19 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = { host: 'https://codecaravan.com.br/' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.sendgrid.net',
+    port: '587',
+    authentication: 'plain',
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD'],
+    domain: 'codecaravan.com.br',
+    enable_starttls_auto: true
+  }
 end
