@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Page < MailForm::Base
   attribute :name, validate: true
   attribute :email, validate: true
@@ -10,7 +12,7 @@ class Page < MailForm::Base
     {
       # this is the subject for the email generated, it can be anything you want
       # subject: "My Contact Form",
-      subject: "Formulário de teste",
+      subject: 'Formulário de contato',
       # to: 'your.email@yourdomain.com',
       to: 'contato@codecaravan.com.br',
       from: %("#{name}" <#{email}>)
