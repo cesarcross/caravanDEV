@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class PagesController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [:home]
-  skip_before_action :authenticate_user!, only: %i[home new create]
+  # skip_before_action :authenticate_user!, only: %i[home new create]
+  skip_before_action :authenticate_user!
 
   def home
     respond_to do |format|
@@ -11,6 +11,10 @@ class PagesController < ApplicationController
       format.html.mobile # /app/views/home/home.html+mobile.erb
     end
     @page = Page.new
+  end
+
+  def en
+    home
   end
 
   def new; end
