@@ -4,37 +4,37 @@
       <%= image_tag 'codecaravan-logo-square-10.svg', alt: "Code Caravan logo" %>
     </div>
     <div class="nav__menu">
-      <div><a href="#services">serviços</a></div>
-      <div><a href="#caravan">quem somos</a></div>
-      <div><a href="#contact">contato</a></div>
+      <div><a href="#services">services</a></div>
+      <div><a href="#caravan">about</a></div>
+      <div><a href="#contact">contact</a></div>
     </div>
   </nav>
   <div class="banner">
     <div class="banner__info">
       <div class="banner__title">
-        <h1>< Ideação e código /></h1>
-          <h2>Exatamente nessa ordem.</h2>
+        <h1>< Ideation & coding /></h1>
+          <h2>Exactly in this order.</h2>
         </div>
       </div>
       <div class="banner__text">
-        <p>Ao integrar tecnologia com design, damos forma ao seu projeto. Confira todas as nossas áreas de atuação:</p>
+        <p>By integrating technology with design, we give shape to your project. Check all of our services below:</p>
       </div>
     </div>
     <div class="areas" id="services">
       <div class="flex-cards">
         <div class="areas__cards">
           <%= image_tag 'tech-icon-color.svg', alt: "Code icon" %>
-          <h3>Tecnologia</h3>
+          <h3>Tecnology</h3>
           <ul>
-            <li>Sistemas para web</li>
-            <li>Sistemas mobile e desktop</li>
+            <li>Web applications</li>
+            <li>Mobile and Desktop applications</li>
           </ul>
         </div>
         <div class="areas__cards">
           <%= image_tag 'digital-icon-color.svg' %>
           <h3>Digital</h3>
           <ul>
-            <li>Web sites</li>
+            <li>Websites</li>
             <li>Landing pages</li>
             <li>E-commerce</li>
           </ul>
@@ -43,9 +43,9 @@
           <%= image_tag 'design-icon-color.svg' %>
           <h3>Design</h3>
           <ul>
-            <li>E-books e editoração</li>
-            <li>Identidade visual</li>
-            <li>Material corporativo</li>
+            <li>E-books and Publishing</li>
+            <li>Branding and Logos</li>
+            <li>Corporate Material</li>
           </ul>
         </div>
       </div>
@@ -53,8 +53,8 @@
     <div class="banner2">
       <div class="banner2__grid">
         <div class="banner2__text">
-          <h3>Relação de confiança garantida</h3>
-          <p>O trabalho bem feito e cumprimento de prazos são peças-chave do nosso compromisso com você.</p>
+          <h3>Trustworthy Relationship</h3>
+          <p> The well done job and the compromise with deadlines are key aspects of our commitment with your business.</p>
         </div>
         <div class="banner2__bg-image"></div>
       </div>
@@ -63,35 +63,35 @@
       <div class="our_caravan">
         <div class="card_main">
           <%= image_tag 'caravan-color.svg', alt: "Wagon trolley" %>
-          <h3>Nossa caravana</h3>
-          <p>Conheça quem está por trás da&nbspCodecaravan</p>
+          <h3>Our Caravan</h3>
+          <p>Meet the team behind our Caravan</p>
         </div>
         <div class="card_cesar">
           <%= image_tag 'Cesar@2x.png', alt: "Cesar Corregiari" %>
           <div class="border">
             <h3>Cesar Corregiari</h3>
-            <p>Back-end developer</p>
+            <p>Backend developer</p>
           </div>
         </div>
         <div class="card_vinicius">
           <%= image_tag 'Vinicius@2x.png', alt: "Vinicius Alvim" %>
           <div class="border">
             <h3>Vinicius Alvim</h3>
-            <p>Back-end developer</p>
+            <p>Backend developer</p>
           </div>
         </div>
         <div class="card_debora">
           <%= image_tag 'Debora@2x.png', alt: "Debora Alves" %>
           <div class="border">
             <h3>Debora Pinheiro</h3>
-            <p>Front-end developer</p>
+            <p>Frontend developer</p>
           </div>
         </div>
         <div class="card_joao">
           <%= image_tag 'Joao@2x.png', alt: "João Alves" %>
           <div class="border">
             <h3>João Alves</h3>
-            <p>Back-end developer</p>
+            <p>Backend developer</p>
           </div>
         </div>
       </div>
@@ -99,16 +99,16 @@
     <div class="form-section" id="contact">
       <div class="form-section__container">
         <div class="form-section__introduction">
-          <p>Entre em contato <i class="fas fa-arrow-down"></i></p>
+          <p>Get in Touch!<i class="fas fa-arrow-down"></i></p>
         </div>
         <div class="form-section__group">
           <%= simple_form_for @page do |f| %>
-            <%= f.input :name, label: false, placeholder: "Nome completo" %>
-            <%= f.input :email, label: false, placeholder: "E-mail" %>
-            <%= f.input :phone, required: false, label: false, placeholder: "Telefone" %>
-            <%= f.input :message, label: false, placeholder: "Sua mensagem" %>
+            <%= f.input :name, label: false, placeholder: "Full name" %>
+            <%= f.input :email, label: false, placeholder: "Email" %>
+            <%= f.input :phone, required: false, label: false, placeholder: "Phone" %>
+            <%= f.input :message, label: false, placeholder: "Your message" %>
             <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
-            <%= f.button :submit, 'Enviar' %>
+            <%= f.button :submit, 'Send' %>
           <% end %>
           <%# <form action="">
             <input type="text" name="full_name" placeholder="Nome completo">
@@ -123,12 +123,12 @@
     <div class="last-infos">
       <div class="last-infos__wrapper">
         <div class="card5">
-          <h3>COMECE AGORA</h3>
-          <p>Estamos prontos para o seu&nbspdesafio!</p>
+          <h3>START NOW</h3>
+          <p>We are ready for your challenge!</p>
           <p><a href="mailto:contato@codecaravan.com.br">contato@codecaravan.com.br</a></p>
         </div>
         <div class="card5">
-          <h3>DIGA UM OLÁ</h3>
+          <h3>SAY HELLO</h3>
           <div class="cities">
             <p>São Paulo</p>
             <p>+55 11 98126-3581</p>
@@ -143,23 +143,23 @@
           </div>
         </div>
         <div class="card5">
-          <h3>JUNTE-SE A NOSSA CARAVANA</h3>
-          <p>Estamos sempre em busca de novos&nbsptalentos:</p>
-          <p><a href="mailto:trabalhena@codecaravan.com.br">trabalhena@codecaravan.com.br</a></p>
+          <h3>JOIN OUR CARAVAN</h3>
+          <p>We are always looking for new talents:</p>
+          <p><a href="mailto:jobs@codecaravan.com.br">jobs@codecaravan.com.br</a></p>
         </div>
         <div class="social_media">
           <ul>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://open.spotify.com/playlist/5x08ErLFjT6mSKiZnC2emD?si=kNyFTMRKQ5mhyoTFy7QkaQ" target="_blank"><i class="fab fa-spotify"></i></a></li>
-            <%= link_to en_path do %>
-              <span class="flag-icon flag-icon-gb"></span>
+            <%= link_to root_path do %>
+              <span class="flag-icon flag-icon-br"></span>
             <% end %>
           </ul>
         </div>
       </div>
     </div>
     <footer>
-          <p>© 2020 Todos os direitos reservados a Codecaravan</p>
+      <p>© 2020 All rights reserved to Codecaravan</p>
     </footer>
   </div>
